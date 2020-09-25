@@ -1,0 +1,14 @@
+{
+  "name": "technical_online_cv",
+  "version": "1.0.0",
+  "description": "Online_Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Mbulelo Thokoayo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
