@@ -1,34 +1,7 @@
-///@import "menu";
-
-$primary-color: #444;
-$secondary-color: #eece1a;
-$show-home-image: true;
-$home-image: url(../img/picture5.jpg);
-$background-opacity: 0.8;
-
-@mixin easeout {
-  transition: all 1.5s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#background-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
-    }
-  }
-}
+@import "config";
+@import "menu";
+@import "edu";
+@import "skills";
 
 * {
   box-sizing: border-box;
@@ -78,7 +51,7 @@ header {
 }
 
 main {
-  padding: 64px;
+  padding: 4rem;
   height: 100%;
 
   .icons {
@@ -101,3 +74,78 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  font-size: medium;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bio-image bio bio"
+    "about about about";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bio-image;
+  margin: auto;
+  border-radius: 20%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.about-1 {
+  grid-area: about;
+}
+
+.about-2 {
+  grid-area: about;
+}
+
+.about-3 {
+  grid-area: about;
+}
+
+.about {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: $secondary-color;
+  height: 60px;
+}
+
+//contact
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeout;
+
+    a {
+      font-size: medium;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+@import "screen";
