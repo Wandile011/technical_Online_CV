@@ -12,35 +12,20 @@
   </head>
   <body id="background-img">
     <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-
-      <nav class="menu">
-        <div class="menu-style">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-navigation"></ul>
-        <li class="nav-item">
-          <a href="index.html" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link"> About Me </a>
-        </li>
-        <li class="nav-item">
-          <a href="skills.html" class="nav-link"> My Skills </a>
-        </li>
-        <li class="nav-item current">
-          <a href="achieve.html" class="nav-link"> My Achievements </a>
-        </li>
-        <li class="nav-item">
-          <a href="education.html" class="nav-link"> Education Background </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link"> Contact Details </a>
-        </li>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Online Portfolio</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">My Skills</a></li>
+          <li><a href="education.html">School</a></li>
+          <li><a class="active" href="#">Achievements</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+        </ul>
       </nav>
     </header>
     <main id="Achievements">
@@ -49,26 +34,26 @@
         <span class="text-secondary">Achievements</span>
       </h1>
       <h2 class="small-heading">Here are some of my achievements...</h2>
-      <section class="achievements-history">
-        Brief Achievements
-        <div>
-          <h3>SS Paki Secondary School</h3>
-          <h4>Public Speaking Team President</h4>
-          <h5>2010</h5>
-        </div>
-
-        <div>
-          <h3>SS Paki Secondary</h3>
-          <h4>Spelling Regional top 5</h4>
-          <h5>2010</h5>
-        </div>
-
-        <div>
-          <h3>Cedar Seconadry School</h3>
-          <h4>Obtained: National Senior Certificate</h4>
-          <h5>2013</h5>
-        </div>
-      </section>
+      <div class="container">
+          <i class="fa fa-trophy"></i><span class="form-info"> Regional Spelling B Top 5</span
+          ><br />
+          <i class="fa fa-school"></i
+          ><span class="form-info"> SS Paki Secondary School</span><br />
+          <i class="fa fa-calendar"></i
+          ><span class="form-info"> 2010</spa ><br />
+            <i class="fa fa-trophy"></i><span class="form-info"> Public Speaking Winning Team </span
+              ><br />
+              <i class="fa fa-school"></i
+              ><span class="form-info"> SS Paki Secondary School</span><br />
+              <i class="fa fa-calendar"></i
+              ><span class="form-info"> 2010</span ><br />
+                <i class="fa fa-trophy"></i><span class="form-info"> National Senior Certificate</span
+                  ><br />
+                  <i class="fa fa-school"></i
+                  ><span class="form-info"> Cedar Secondary School</span><br />
+                  <i class="fa fa-calendar"></i
+                  ><span class="form-info"> 2013</spa ><br />
+      </div>
     </main>
 
     <footer id="main-footer">Copyright &copy; Thokoayo 2020</footer>

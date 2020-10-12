@@ -13,69 +13,42 @@
   </head>
   <body id="background-img">
     <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-
-      <nav class="menu">
-        <div class="menu-style">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-navigation"></ul>
-        <li class="nav-item">
-          <a href="index.html" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link"> About Me </a>
-        </li>
-        <li class="nav-item">
-          <a href="skills.html" class="nav-link"> My Skills </a>
-        </li>
-        <li class="nav-item">
-          <a href="achieves.html" class="nav-link"> My Achievements </a>
-        </li>
-        <li class="nav-item current">
-          <a href="education.html" class="nav-link"> Education Background </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link"> Contact Details </a>
-        </li>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Online Portfolio</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">My Skills</a></li>
+          <li><a class="active" href="#">School</a></li>
+          <li><a href="achieves.html">Achievements</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+        </ul>
       </nav>
     </header>
     <main id="education">
       <h1 class="large-heading">
         My
-        <span class="text-secondary">Education</span>
+        <span class="text-secondary">Background</span>
       </h1>
-      <h2 class="small-heading">My education background....</h2>
-      <section class="education-history">
-        Brief Background
-        <div>
-          <h3>Mokwallo Primary School</h3>
-          <h4>Vredefort</h4>
-          <h5>2006 - 2007</h5>
-        </div>
+      <h2 class="small-heading">Heres my education background...</h2>
+      <div class="container">
+          <i class="fa fa-school"></i><span class="form-info"> Mokwallo Primary School</span><br />
+          <i class="fa fa-calendar"></i><span class="form-info"> 2001 - 2007</spa ><br />
 
-        <div>
-          <h3>SS Paki Secondary School</h3>
-          <h4>Vredefort</h4>
-          <h5>2008 - 2010</h5>
-        </div>
+          <i class="fa fa-school"></i><span class="form-info"> SS Paki Secondary School</span><br />
+          <i class="fa fa-calendar"></i><span class="form-info"> 2008 - 2010</spa ><br />
 
-        <div>
-          <h3>Cedar Secondary School</h3>
-          <h4>Sasolburg</h4>
-          <h5>2011 - 2013</h5>
-        </div>
+          <i class="fa fa-school"></i><span class="form-info"> Cedar Secondary School</span><br />
+          <i class="fa fa-calendar"></i><span class="form-info"> 2011 - 2013</spa ><br />
 
-        <div>
-          <h3>North West University</h3>
-          <h4>Vanderbijlpark</h4>
-          <h5>2016 - Present</h5>
-        </div>
-      </section>
+          <i class="fa fa-school"></i><span class="form-info"> North West University</span><br />
+          <i class="fa fa-calendar"></i><span class="form-info"> 2016 - Present</spa ><br />
+
+      </div>
     </main>
 
     <footer id="main-footer">Copyright &copy; Thokoayo 2020</footer>

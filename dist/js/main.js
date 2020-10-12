@@ -18,16 +18,14 @@ function rotateMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuStyle.classList.add("show");
-
     itemNav.forEach((item) => item.classList.add("show"));
 
     showMenu = true;
   } else {
     menuButton.classList.remove("close");
-    menu.classList.remove("showe");
+    menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuStyle.classList.remove("show");
-
     itemNav.forEach((item) => item.classList.remove("show"));
 
     showMenu = false;

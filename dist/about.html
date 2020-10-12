@@ -11,83 +11,39 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>About Me</title>
   </head>
-  <body>
+  <body id="background-img">
     <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-
-      <nav class="menu">
-        <div class="menu-style">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-navigation"></ul>
-        <li class="nav-item">
-          <a href="index.html" class="nav-link"> Home </a>
-        </li>
-        <li class="nav-item current">
-          <a href="about.html" class="nav-link"> About Me </a>
-        </li>
-        <li class="nav-item">
-          <a href="skills.html" class="nav-link"> My Skills </a>
-        </li>
-        <li class="nav-item">
-          <a href="achieves.html" class="nav-link"> My Achievements </a>
-        </li>
-        <li class="nav-item">
-          <a href="education.html" class="nav-link"> Education Background </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link"> Contact Details </a>
-        </li>
+      <nav>
+        <label class="logo">Online Portfolio</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="#">About Me</a></li>
+          <li><a href="skills.html">My Skills</a></li>
+          <li><a href="education.html">School</a></li>
+          <li><a href="achieves.html">Achievements</a></li>
+          <li><a href="contact.html">Contact Details</a></li>
+        </ul>
       </nav>
     </header>
-    <main id="about-info">
+    <main id="about">
       <h1 class="large-heading">
         About
         <span class="text-secondary">Me</span>
       </h1>
-      <h2 class="small-heading">A brief background about me...</h2>
-      <div class="bio">
-        <img
-          src="../dist/img/portrait.jpg"
-          alt="Mbulelo Thokoayo"
-          class="about-image"
-        />
-        <div class="bio">
-          <h3 class="text-secondary">About</h3>
-          <p>
-            My full names are Mbule Wandile Maurice Thokoayo, final year IT
-            student and studying modules such as IT development, Operating
-            Systems and Decision Support Systems to name a few, Im interested in
-            careers such web developer and designer, data analyst database and
-            security. What inspired me to do my IT degree is that i love how
-            broad the technology sector is and theres endless possibilities for
-            one to achieve career side or the business side
-          </p>
-        </div>
+      <h2 class="small-heading">A brief information about me...</h2>
+      <div class="container">
+        <i class="fa fa-user"></i><span class="form-info"> Mbulelo Wandile Maurice Thokoayo</span><br />
+        <i class="fa fa-birthday-cake"></i><span class="form-info"> 14 December 1993</spa ><br />
 
-        <div class="about about-1">
-          <h3>Place of birth</h3>
-          <p>Sasolburg Zamdela in the year 1993</p>
-        </div>
-        <div class="about about-2">
-          <h3>Schools attended</h3>
-          <p>
-            >Mokwallo Primary School >SS Paki Seconadry School >Cedar Secondary
-            School
-          </p>
-        </div>
-        <div class="about about-3">
-          <h3>Hobbies</h3>
-          <p>
-            Playing football, watching football, playing video games, drawing
-            and listening to music
-          </p>
-        </div>
-      </div>
+        <i class="fa fa-male"></i><span class="form-info"> Male</span><br />
+        <i class="fa fa-flag"></i><span class="form-info"> South African</spa ><br />
+
+        <i class="fa fa-cross"></i><span class="form-info"> Christian</span><br />
+        <i class="fa fa-thumbs-up"></i><span class="form-info"> Sports, computers, video-games, music, cars and mostly family</spa ><br />
+
+        <i class="fa fa-quote-left"></i><span class="form-info"> "Always believe in yourself"</span><br />
+        <i class="fa fa-graduation-cap"></i><span class="form-info"> Bsc. Information Technology (2020)</spa ><br />
+
     </main>
 
     <footer id="main-footer">Copyright &copy; Thokoayo 2020</footer>

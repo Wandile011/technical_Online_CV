@@ -1,23 +1,56 @@
-@import "config";
 @import "menu";
-@import "edu";
 @import "skills";
+@import "edu";
+@import "contact";
+@import "achieve";
+@import "about";
+
+$primary-color: #666;
+$secondary-color: #000080;
+$show-home-image: true;
+$show-image: url(../img/picture5.jpg);
+$background-opacity: 0.6;
+
+@mixin easeout {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#background-img {
+      background: $show-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include background();
+  @include background;
   background: $primary-color;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
-//Headings
+//headings
 h1,
 h2,
 h3 {
@@ -29,123 +62,48 @@ h3 {
   }
 
   &.small-heading {
-    margin-bottom: 32px;
-    padding: 0.2rem 16px;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
   }
-}
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
+  header {
+    position: fixed;
+    z-index: 2;
+    width: 50%;
+  }
 
-.text-secondary {
-  color: $secondary-color;
-}
+  .text-secondary {
+    color: $secondary-color;
+  }
 
-main {
-  padding: 4rem;
-  height: 100%;
+  main {
+    padding: 4rem;
+    height: 100%;
 
-  .icons {
-    margin-top: 16px;
+    .icons {
+      margin-top: 1rem;
 
-    a {
-      padding: 0.4rem;
+      a {
+        padding: 0.4rem;
 
-      &:hover {
-        color: $secondary-color;
-        @include easeout();
+        & :hover {
+          color: $secondary-color;
+          @include easeout();
+        }
       }
     }
   }
 
-  &#home {
+  &#Home {
     overflow: hidden;
     h1 {
-      margin-top: 20vh;
+      margin-top: 35vh;
     }
   }
 }
-
-.about-info {
-  display: grid;
-  font-size: medium;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bio-image bio bio"
-    "about about about";
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.bio-image {
-  grid-area: bio-image;
-  margin: auto;
-  border-radius: 20%;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.bio {
-  grid-area: bio;
-  font-size: 1.5rem;
-}
-
-.about-1 {
-  grid-area: about;
-}
-
-.about-2 {
-  grid-area: about;
-}
-
-.about-3 {
-  grid-area: about;
-}
-
-.about {
-  background: lighten($primary-color, 5);
-  padding: 0.5rem;
-  border-bottom: $secondary-color 5px;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: $secondary-color;
-  height: 60px;
-}
-
-//contact
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeout;
-
-    a {
-      font-size: medium;
-      display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-  }
-}
-@import "screen";
