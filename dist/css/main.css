@@ -230,6 +230,24 @@ div .container {
   width: 100%;
   padding-bottom: 2%; }
 
+body {
+  padding: 0px;
+  margin: 0px;
+  font-weight: sans-serif; }
+
+div .container {
+  width: 90%;
+  margin: auto;
+  overflow: hiddden; }
+
+#about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2%; }
+
 * {
   box-sizing: border-box; }
 
